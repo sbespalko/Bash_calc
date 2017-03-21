@@ -29,7 +29,7 @@ case $operator in
 	'-') sum=$(funcSubtr $num1 $num2);;
 	'*') sum=$(funcMulti $num1 $num2);;
 	'/') if [ $num2 -eq 0 ]; then
-			echo "Error: delimiter by zero";
+			echo "Error: division by zero";
 		 else
 			sum=$(funcDiv $num1 $num2);
 		 fi;;
